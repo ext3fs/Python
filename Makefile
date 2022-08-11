@@ -1,16 +1,16 @@
 CC = pyinstaller
-MAIN = main
+TARGET = curr
 
 .PHONY: install clean run
 
 #install:
-#	$(CC) --onefile --console $(MAIN).py 
+#	$(CC) --onefile --console $(TARGET).py 
 
 #clean:
-#	rm -rf $(MAIN).spec ./build ./dist ./core*
+#	rm -rf $(TARGET).spec ./build ./dist ./core*
 
 run:
-	python3 $(MAIN).py  
+	python3 $(TARGET).py  
 	
 clean:
 	rm -rf ./__pycache__ ./core*

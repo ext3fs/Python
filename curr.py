@@ -1,5 +1,4 @@
-import fn
-
-print(fn.add(2,3))
-print(__name__)
-print(fn.__name__)
+a = [1,2]
+b = [3,4]
+b = a
+print(id(a),id(b))
